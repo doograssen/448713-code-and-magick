@@ -17,7 +17,7 @@ var SHADOW_COLOR = 'rgba(0, 0, 0, 0.7)';
 var STAT_FLOOR = 245;
 var FONT_SIZE = 16;
 
-var renderStatistics = function (ctx, names, times) {
+window.renderStatistics = function (ctx, names, times) {
 
   var showCenterText = function (x, y, space, text, above) {
     var posX = x + space / 2;
@@ -63,7 +63,7 @@ var renderStatistics = function (ctx, names, times) {
       columnX0 += (COLUMN_WIDTH + COLUMN_INDENT);
     }
   };
-  
+
   drawField();
   drawStat();
 };
